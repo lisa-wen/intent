@@ -48,11 +48,12 @@ def main(file_name):
     new_text_tfidf = tfidf_vectorizer.transform(new_text)
 
     # Das Label (Intent) für den neuen Text vorhersagen
-    predicted_label = clf.predict(new_text_tfidf)[0]
+    predicted_label = model.predict(new_text_tfidf)[0]
     print(predicted_label)
 
+
 if __name__ == '__main__':
-    #try:
+    # try:
     main("train.json")
-    #except FileNotFoundError as e:
-        #print(e)
+    # except FileNotFoundError as e:
+        # print(e)
