@@ -53,6 +53,6 @@ def main(file_name):
 
 if __name__ == '__main__':
     #try:
-    main("test.json")
+    main("train.json")
     #except FileNotFoundError as e:
         #print(e)
